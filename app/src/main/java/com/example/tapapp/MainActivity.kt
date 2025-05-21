@@ -73,8 +73,8 @@ class MainActivity : ComponentActivity() {
 
                 val success = withContext(Dispatchers.IO) {
                     sendNotification(
-                        topic = "vinu-20030416",
-//                        topic = "bim-20031029",
+                        // topic = "your_subscribed_topic",
+                        // topic = "your_partners subscribed_topic",
                         title = emojiTitle,
                         message = messageContent,
                         priority = "default"

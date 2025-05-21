@@ -28,3 +28,26 @@ A simple system is used to send notifications.
 3. Your app is designed to send the API call to the NTFY topic subscribed by your partner and vice versa. The Notification message is modified from the app.
 
 ## Android Version
+
+Once you have completed setting up the NTFY app on both you and your partner's phones, let's proceed with the app implemenation.
+Make sure to have android studio installed.
+To install the application on your phones, either use USB debugging, or export the app as a .apk file.
+But first, we need to configure the topic to be used by the API depending on the phone.
+
+1. Open the MainActivity.kt in the ```app\src\main\java\com\example\tapapp\MainActivity.kt``` directory.
+2. In the ```sendNtfyNotification()```, add your topics as follows
+
+```
+val success = withContext(Dispatchers.IO) {
+    sendNotification(
+        // topic = "your_subscribed_topic",
+        // topic = "your_partners subscribed_topic",
+        title = emojiTitle,
+        message = messageContent,
+        priority = "default"
+    )
+}
+```
+
+3. Now, when installing on your phone, make sure to uncomment the topic you partner subscribed to. So when you click the button, they get the message and not you.
+4. Do the same on your partners phone.  
