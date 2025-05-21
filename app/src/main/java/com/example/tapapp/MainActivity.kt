@@ -12,7 +12,6 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -73,7 +72,7 @@ class MainActivity : ComponentActivity() {
 
                 val success = withContext(Dispatchers.IO) {
                     sendNotification(
-                        // topic = "your_subscribed_topic",
+                         topic = "your_subscribed_topic",
                         // topic = "your_partners subscribed_topic",
                         title = emojiTitle,
                         message = messageContent,

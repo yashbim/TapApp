@@ -51,3 +51,11 @@ val success = withContext(Dispatchers.IO) {
 
 3. Now, when installing on your phone, make sure to uncomment the topic you partner subscribed to. So when you click the button, they get the message and not you.
 4. Do the same on your partners phone.  
+
+## Installing the App
+
+There are 2 options, USB Debugging, or sharing the APK.
+
+This article explains in detail the process : https://medium.com/@ybimsara03/usb-debugging-on-android-studio-73e585ea647e
+
+Read it and leave a follow :)
