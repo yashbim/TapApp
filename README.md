@@ -51,6 +51,12 @@ val success = withContext(Dispatchers.IO) {
 
 3. Now, when installing on your phone, make sure to uncomment the topic you partner subscribed to. So when you click the button, they get the message and not you.
 4. Do the same on your partners phone.  
+5. Finally, feel free to change the notification content from the list off messages to whatever cheesy and nerdy pickup line you came up with.
+```
+private val loveMessages = listOf(
+        "❤️ Thinking about you 💕",
+        "💖 Missing you right now .....,
+```
 
 ## Installing the App
 
